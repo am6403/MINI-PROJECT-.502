@@ -8,7 +8,7 @@ typedef struct
 STD s;
 void display(FILE *);
 int search(FILE *,int);
-void main()
+int main()
 {
     int i,n,id_key,opn;
     FILE *fp;
@@ -43,7 +43,6 @@ void main()
                 printf(" Failure!! Record with id %d not found\n",id_key);
             break;
         case 3:  printf(" Exit!! Press a key . . .");
-            getch();
             break;
         default:  printf(" Invalid Option!!! Try again !!!\n");
             break;
